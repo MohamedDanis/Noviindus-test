@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800;900&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7.5rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+   
+}
+.logo img{
+    height: 3rem;
+}
+nav{
+    height: 100%;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding-right: 2rem;
+    z-index: 1;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    width: 46rem;
+    height: 100%;
+}
+.nav-items{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    margin-right: 1rem;
+    font-size: 14px;
+    padding-right: 2rem;
+}
+.contact{
+    text-align:right ;
+    margin-right: 2rem;
+}
+#number{
+    font-weight: 700;
+    color:black;
+    font-size: 20px;
+}
+.contact .email{
+    font-weight: 600;
+    color: #00A87F;
+    
+    font-size: 15px;
+}
+.cta-btn{
+    background-color: #00A87F;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    height: 3.38rem;
+    width: 10.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero{
+    height: 110vh;
+    width: 100%;
+    background-image: url(img-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+.line{
+    width: 90%;
+    height: 0.1rem;
+    background-color: #00A87F;
+    z-index: 1;
+}
+.hero-text{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 1;
+    margin-left: 5%;
+}
+.hero-text h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+}
+.hero-text p{
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1rem;
+}
+.hero-text button{
+    background-color: #00A87F;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    height: 3.38rem;
+    width: 10.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cards{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    right: 5%;
+}
+.card1{
+    width: 27rem;
+    height: 11.8rem;
+    background: rgba(152, 152, 152, 0.58);
+border: 1px solid rgba(255, 255, 255, 0.27);
+backdrop-filter: blur(3px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 10px 0px 0px 10px;
+padding: 1rem;
+}
+ .first{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.first h2{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.card1 .second{
+    display: flex;
+    color: white;
+    margin-top: 3rem;
+    align-items: center;
+    
+}
+.card1 .second h3{
+    font-weight: 500;
+    margin-left: 2rem;
+}
+.card2{
+    width: 25rem;
+    height: 11.8rem;
+    background: linear-gradient(0deg, rgb(0 168 127 / 88%), rgb(0 168 127)), url(.jpg), rgb(255 255 255 / 48%);
+    border-radius: 0px 10px 10px 0px;
+    padding: 1rem;
+}
+.card2 .second{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+.subsecond{
+    display: flex;
+    flex-direction: column;
+}
+.subsecond h3:nth-child(1){
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+}
+.subsecond h3{
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+}
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    z-index: 1;
+    position: relative;
+}
+.first-half{
+    width: 50%;
+    padding: 5%;
+}
+.first-half h1{
+    font-style: normal;
+font-weight: 700;
+font-size: 44px;
+line-height: 58px;
+}
+.first-half span{
+    color: #00A87F;
+}
+.first-half p{
+    font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 33px;
+}
+.first-half p:nth-child(2){
+    margin-top: 2rem;
+}
+.first-half p:nth-child(3){
+    margin-top: 1rem;
+}
+.first-half button{
+    background-color:  #333; 
+    margin-top: 2rem;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    height: 4rem;
+    width: 16.75rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+/* or 115% */
+
+text-align: center;
+}
+.sec-half{
+    width: 50%;
+    background: linear-gradient(0deg, rgb(0 168 127 / 69%), rgb(0 168 127 / 70%)), url(image-4.png), rgb(255 255 255 / 48%);
+    height: 100%;
+    padding: 5%;
+}
+.sec-half h1{
+    font-style: normal;
+font-weight: 700;
+font-size: 31px;
+line-height: 43px;
+color: white;
+}
+.sec-half .line{
+    width: 247px;
+height: 1px;
+background-color: white
+;
+margin-top: 25px;
+}
+.plan{
+    width: 38rem;
+height: 20rem;
+background-color: #144D92;
+border-radius: 22px;
+margin-top: 3rem;
+position: relative;
+background-size: cover;
+}
+.plan img{
+    width: 36rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.plan h1{
+    width: 50%;
+    padding-left: 3rem;
+    padding-top: 2rem;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 51px;
+}
+.plan p{
+    font-style: normal;
+font-weight: 600;
+font-size: 13px;
+color: white;
+line-height: 26px;
+padding-left: 3rem;
+padding-top: 1rem;
+}
+.priceholder{
+    width: 522px;
+height: 81px;
+background-color: #00A87F;
+margin-top: 1rem;
+
+}
+.priceholder h1{
+    padding-top: 1rem;
+}
+.middlething{
+   
+}
+.middlething h1{
+    font-weight: 700;
+font-size: 80px;
+line-height: 42px;
+color: #00A87F;
+
+}
+.middlething h2{
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 31px;
+}
+.middle{
+    position: absolute;
+    z-index: 2;
+    width: 25rem;
+    left: 47%;
+    top: 75%;
+}
+.middlething .text{
+    position: absolute;
+    display: flex;
+    left: 44.5%;
+    top: 82%;
+    z-index: 3;
+    align-items: center;
+}
+
+.text h1{
+    font-weight: 700;
+font-size: 62px;
+line-height: 42px;
+padding-bottom: 3rem;
+}
+.text h2{
+    font-weight: 700;
+font-size: 24px;
+line-height: 31px;
+width: 50%;
+/* or 115% */
+
+font-variant: all-small-caps;
+
+color: #3D3D3D;
+}
+
+.features h1{
+    font-style: normal;
+font-weight: 700;
+font-size: 44px;
+line-height: 45px;
+/* identical to box height, or 102% */
+color: #2A2A2A;
+margin-left: 6rem;
+margin-top: 8rem;
+}
+
+.features p{
+    font-style: normal;
+    font-weight: 400;
+font-size: 15px;
+line-height: 30px;
+/* or 200% */
+color: #000000;
+margin-left: 6rem;
+margin-top: 1rem;
+}
+.featcards{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+.featcard{
+    width: 420px;
+height: 466px;
+background-repeat: no-repeat;
+background-image: url(image\ 5.png);
+display: flex;
+justify-content: flex-end;
+flex-direction: column;
+border-radius: 10px 10px 0px 0px;
+}
+.featcard:nth-child(2){
+    background-image: url(image6.png);
+}
+.featcard:nth-child(3){
+    background-image: url(image8.png);
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+
+}
+.card-text h1{
+    font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 23px;
+color: #FFFFFF;
+margin: 0;
+}
+.card-content{
+    width: 100%;
+height: 136px;
+background: #00A87F;
+display: flex;
+justify-content: space-around;
+align-items: center;
+border-radius: 0px 0px 10px 10px;
+}
+.card-text h2{
+    margin-top: 1rem;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 23px;
+/* or 128% */
+
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+}
+.featline{
+    width: 127px;
+height: 1px;
+margin-top: 1rem;
+background: rgba(255, 255, 255, 0.59);
+}
+footer{
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+   
+}
+footer h1{
+    font-style: normal;
+font-weight: 700;
+font-size: 44px;
+line-height: 45px;
+/* identical to box height, or 102% */
+color: #2A2A2A;
+margin-left: 6rem;
+margin-top: 8rem;
+}
+
+footer p{
+    font-style: normal;
+    font-weight: 400;
+font-size: 15px;
+line-height: 30px;
+/* or 200% */
+color: #000000;
+margin-left: 6rem;
+margin-top: 1rem;
+}
+.footerfeat{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+.footerfeat svg{
+    width: 5rem;
+}
+.footfeatchild  p{
+    font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+margin: 0;
+color: #2E2E2E;
+}
+.footfeatchild{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
