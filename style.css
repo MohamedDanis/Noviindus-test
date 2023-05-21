@@ -35,31 +35,33 @@ nav{
     display: flex;
     align-items: center;
     padding-left: 2rem;
-    width: 46rem;
+    /* width: 46rem; */
     height: 100%;
 }
 .nav-items{
     text-decoration: none;
     font-weight: 600;
     color: black;
-    margin-right: 1rem;
-    font-size: 14px;
+    /* margin-right: 1rem; */
+    font-size: clamp(0.5rem, 1vw, 1rem);
     padding-right: 2rem;
 }
 .contact{
     text-align:right ;
-    margin-right: 2rem;
+    margin-right: 2em;
+    
 }
 #number{
     font-weight: 700;
     color:black;
-    font-size: 20px;
+    
+    font-size: clamp(0.8rem, 1vw, 1rem);
 }
 .contact .email{
     font-weight: 600;
     color: #00A87F;
+    font-size: clamp(0.8rem, 1vw, 1rem);
     
-    font-size: 15px;
 }
 .cta-btn{
     background-color: #00A87F;
@@ -67,12 +69,14 @@ nav{
     border: none;
     padding: 0.5rem 1rem;
     font-weight: 600;
+    min-width: 8rem;
     cursor: pointer;
     height: 3.38rem;
-    width: 10.3rem;
+    width: 11vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: clamp(0.8rem, 1vw, 1rem);
 }
 .hero{
     height: 110vh;
@@ -82,11 +86,11 @@ nav{
     background-repeat: no-repeat;
    
 }
-.line{
+.line4{
     width: 90%;
     height: 0.1rem;
     background-color: #00A87F;
-    z-index: 1;
+    z-index: 0;
 }
 .hero-text{
     width: 35%;
@@ -479,4 +483,249 @@ color: #2E2E2E;
     justify-content: center;
     height: 100%;
     width: 100%;
+}
+.hamburger{
+    display: none;
+}
+
+
+/* media queries for mobile device*/
+@media screen and (max-width: 768px){
+    .navbar{
+        height: 5rem;
+        z-index: 3;
+    }
+    /* make styles for hamburger with parent class named "hamburger" and lines class as "line1","line2","line3" */
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 2rem;
+        width: 2rem;
+        cursor: pointer;
+        z-index: 2;
+       
+    }
+    .line{
+        width: 2rem;
+        height: 0.25rem;
+        background-color: black;
+        border-radius: 5px;
+        z-index: 2;
+        transition: all 0.5s ease;
+        
+    }
+    .line1 {
+        transform: rotate(45deg) translate(0.5rem,0.5rem);
+        transition: all 0.5s ease;
+    }
+    .line2 {
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+    .line3 {
+        transform: rotate(-45deg) translate(0.5rem,-0.5rem);
+        transition: all 0.5s ease;
+    }
+    /* .navbar{
+        height: 5rem;
+    }
+    nav{
+        height: 100%;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    } */
+
+    .nav-list{
+        display: none;
+    }
+   
+    .open{
+        height: 50vh;
+        width: 90%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 2rem;
+        background-color: #144D92;
+        position: absolute;
+        left: 5%;
+        top: 4.5rem;
+        z-index: 3;
+    }
+    .nav-items{
+        padding-right: 0;
+        margin-right: 0;
+        font-size: 1.2rem;
+    }
+    .contact{
+        display: none;
+    }
+    .cta{
+        display: none;
+    }
+    /* add overlay styles for class named overlay */
+    .overlay{
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0,0,0,0.3);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .hero{
+        height: 100vh;
+        background-position: 69%;
+    }
+    .hero-text{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-end;
+        text-align: center;
+        margin-left: 0;
+        padding-bottom: 7em;
+       
+    }
+    .hero-text h1{
+        font-size: 2rem;
+        z-index: 2;
+    }
+    .hero-text p{
+        font-size: 12px;
+        z-index: 2;
+    }
+    .hero-text button{
+        z-index: 2;
+    }
+    .cards{
+        display: none;
+    }
+    .about{
+        flex-direction: column;
+        height: 100%;
+    }
+    .first-half{
+        width: 100%;
+        height: 50%;
+        padding: 5%;
+    }
+    .first-half h1{
+        font-size: 2rem;
+    }
+    .first-half p{
+        font-size: 12px;
+    }
+    .sec-half{
+        width: 100%;
+        height: 50%;
+        padding: 5%;
+    }
+    .sec-half h1{
+        font-size: 1.5rem;
+    }
+    .sec-half .line{
+        width: 100px;
+    }
+    .plan{
+        width: 100%;
+        height: 50%;
+        margin-top: 0;
+    }
+    .plan h1{
+        width: 100%;
+        padding-left: 0;
+        padding-top: 0;
+        font-size: 2rem;
+    }
+    .plan p{
+        padding-left: 0;
+        padding-top: 0;
+        font-size: 12px;
+    }
+    .priceholder{
+        width: 100%;
+        height: 50%;
+    }
+    .middlething{
+        width: 100%;
+        height: 50%;
+    }
+    .middlething h1{
+        font-size: 3rem;
+    }
+    .middlething h2{
+        font-size: 1rem;
+    }
+    .middle{
+        width: 100%;
+        height: 50%;
+        left: 0;
+        top : 50%;
+    }
+    .middlething .text{
+        left: 0;
+        top: 50%;
+    }
+    .text h1{
+        font-size: 2rem;
+    }
+    .text h2{
+        font-size: 1rem;
+    }
+    .features h1{
+        font-size: 2rem;
+        margin-left: 0;
+    }
+    .features p{
+        font-size: 12px;
+        margin-left: 0;
+    }
+    .featcards{
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .featcard{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+    .card-text h1{
+        font-size: 2rem;
+    }
+    .card-content{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .card-text h2{
+        font-size: 1rem;
+    }
+    .featline{
+        width: 100px;
+    }
+    footer h1{
+        font-size: 2rem;
+        margin-left: 0;
+    }
+    footer p{
+        font-size: 12px;
+        margin-left: 0;
+    }
+    .footerfeat{
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .footerfeat svg{
+        width: 3rem;
+    }
+    .footfeatchild  p{
+        font-size: 12px;
+    }
 }
